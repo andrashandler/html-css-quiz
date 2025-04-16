@@ -71,7 +71,7 @@
     "question": "Melyik karakterrel különböztetjük meg a záró taget?",
     "options": ["!", "*", "<", "/"],
     "answer": 3,
-    "explanation": "A záró HTML tagot a / karakterrel különböztetjük meg a nyitó tagetől.",
+    "explanation": "A záró HTML tagot a / karakterrel különböztetjük meg a nyitó tag-től.",
     "example": "<p>\n  Ez egy bekezdés.\n</p>\n<p>\n  Ez egy másik bekezdés.\n</p>"
   },
   {
@@ -82,7 +82,7 @@
       "<a href=\"url\" target=\"new\">"
     ],
     "answer": 0,
-    "explanation": "A target=\"_blank\" attribútum megnyitja a hivatkozást egy új böngészőablakban vagy fülön.",
+    "explanation": "A target=\"_blank\" attribútum megnyitja a hivatkozást egy új böngészőablakban vagy lapfülön.",
     "example": "<a href=\"http://example.com\" target=\"_blank\">Kattints ide</a>"
   },
   {
@@ -114,7 +114,7 @@
     ],
     "answer": 3,
     "explanation": "A <input type=\"checkbox\"> elem létrehozza a jelölőnégyzetet, amely lehetővé teszi a felhasználó számára, hogy több lehetőség közül válasszon.",
-    "example": "<input type=\"checkbox\" name=\"option1\" value=\"yes\">Igen</input>\n<input type=\"checkbox\" name=\"option2\" value=\"no\">Nem</input>"
+    "example": "<input type=\"checkbox\" name=\"option1\" value=\"yes\">Igen</input>"
   },
   {
     "question": "Mi a helyes módja egy legördülő (drop-down) lista létrehozásának?",
@@ -125,7 +125,7 @@
       "<list>"
     ],
     "answer": 1,
-    "explanation": "A <select> elem létrehozza a legördülő listát, amely lehetővé teszi a felhasználó számára, hogy egy lehetőséget válasszon a megadott lehetőségek közül.",
+    "explanation": "A <select> elem létrehozza a legördülő listát, amely lehetővé teszi a felhasználó számára, hogy kiválasszon egyet a megadott lehetőségek közül.",
     "example": "<label for=\"cars\">Válassz autót:</label>\n\n<select name=\"cars\" id=\"cars\">\n  <option value=\"volvo\">Volvo</option>\n  <option value=\"saab\">Saab</option>\n  <option value=\"mercedes\">Mercedes</option>\n  <option value=\"audi\">Audi</option>\n</select>"
   },
   {
@@ -137,92 +137,7 @@
       "<input type=\"textarea\">"
     ],
     "answer": 1,
-    "explanation": "A <textarea> elem létrehozza a szövegmezőt, amely lehetővé teszi a felhasználó számára, hogy több soros szöveget írjon be.",
-    "example": "<textarea rows=\"4\" cols=\"50\">\n  Írj ide többsoros szöveget...\n</textarea>"
-  },
-  {
-    "question": "Mi a kép beillesztésének a helyes módja?",
-    "options": [
-      "<image src=\"cat.png\">Cica</img>",
-      "<picture src=\"cat.png\">Cica</picture>",
-      "<img src=\"cat.png\" alt=\"Cica\">",
-      "<img href=\"cat.png\" alt=\"Cica\">"
-    ],
-    "answer": 2,
-    "explanation": "A <img> elem a képek beillesztésére szolgál. Az src attribútum határozza meg a kép forrását, míg az alt attribútum a kép alternatív szövegét adja meg, amely akkor jelenik meg, ha a kép nem tölthető be.",
-    "example": "<img src=\"cat.png\" alt=\"Cica\">"
-  },
-  {
-    "question": "A HTML kommenteket <!-- és --> közé írjuk.",
-    "options": ["Igen", "Nem"],
-    "answer": 0,
-    "explanation": "A HTML kommentek a <!-- és --> közé írt szövegek, amelyeket a böngészők figyelmen kívül hagynak. Ezeket a fejlesztők használják megjegyzések hozzáadására a kódhoz, hogy magyarázzák a kód működését vagy megjegyzéseket fűzzenek hozzá.",
-    "example": "<!-- Ez egy komment -->\n<p>Ez egy bekezdés.</p>"
-  },
-  {
-    "question": "Hogy tudod megnyitni a linket új ablakban?",
-    "options": [
-      "<a href=\"url\" target=\"_blank\">",
-      "<a href=\"url\" new=\"window\">",
-      "<a href=\"url\" target=\"new\">"
-    ],
-    "answer": 0,
-    "explanation": "A target=\"_blank\" attribútum megnyitja a hivatkozást egy új böngészőablakban vagy fülön.",
-    "example": "<a href=\"http://example.com\" target=\"_blank\">Kattints ide</a>"
-  },
-  {
-    "question": "Az alábbiak közül melyek tartoznak a <table> elementhez?",
-    "options": [
-      "<thead><body><tr>",
-      "<table><head><tfoot>",
-      "<table><th><tt>",
-      "<table><tr><td>"
-    ],
-    "answer": 3,
-    "explanation": "A <table> elem a táblázatot definiálja, a <tr> elem a sorokat, a <td> elem a cellákat, és a <th> elem pedig a fejléc cellákat jelöli.",
-    "example": "<table>\n  <tr>\n    <th>Fejléc 1</th>\n    <th>Fejléc 2</th>\n  </tr>\n  <tr>\n    <td>Adat 1</td>\n    <td>Adat 2</td>\n  </tr>\n</table>"
-  },
-  {
-    "question": "Mivel tudsz HTML-ben számozott listát létrehozni?",
-    "options": ["<ol>", "<list>", "<ul>", "<dl>"],
-    "answer": 0,
-    "explanation": "Az <ol> elem számozott listát hoz létre, míg az <ul> elem felsorolásos listát. A <dl> elem definíciós listát, a <list> pedig nem létező HTML elem.",
-    "example": "<ol>\n  <li>Első elem</li>\n  <li>Második elem</li>\n</ol>"
-  },
-  {
-    "question": "Mi a helyes módja egy jelölőnégyzet (checkbox) elem létrehozásának?",
-    "options": [
-      "<checkbox>",
-      "<input type=\"check\">",
-      "<check>",
-      "<input type=\"checkbox\">"
-    ],
-    "answer": 3,
-    "explanation": "A <input type=\"checkbox\"> elem létrehozza a jelölőnégyzetet, amely lehetővé teszi a felhasználó számára, hogy több lehetőség közül válasszon.",
-    "example": "<input type=\"checkbox\" name=\"option1\" value=\"yes\">Igen</input>\n<input type=\"checkbox\" name=\"option2\" value=\"no\">Nem</input>"
-  },
-  {
-    "question": "Mi a helyes módja egy legördülő (drop-down) lista létrehozásának?",
-    "options": [
-      "<input type=\"dropdown\">",
-      "<select>",
-      "<input type=\"list\">",
-      "<list>"
-    ],
-    "answer": 1,
-    "explanation": "A <select> elem létrehozza a legördülő listát, amely lehetővé teszi a felhasználó számára, hogy egy lehetőséget válasszon a megadott lehetőségek közül.",
-    "example": "<label for=\"cars\">Válassz autót:</label>\n\n<select name=\"cars\" id=\"cars\">\n  <option value=\"volvo\">Volvo</option>\n  <option value=\"saab\">Saab</option>\n  <option value=\"mercedes\">Mercedes</option>\n  <option value=\"audi\">Audi</option>\n</select>"
-  },
-  {
-    "question": "Mi a helyes módja a szövegmező (textarea) létrehozásának?",
-    "options": [
-      "<input type=\"text\">",
-      "<textarea>",
-      "<text>",
-      "<input type=\"textarea\">"
-    ],
-    "answer": 1,
-    "explanation": "A <textarea> elem létrehozza a szövegmezőt, amely lehetővé teszi a felhasználó számára, hogy több soros szöveget írjon be.",
+    "explanation": "A <textarea> elem létrehozza a szövegmezőt több soros input számára.",
     "example": "<textarea rows=\"4\" cols=\"50\">\n  Írj ide többsoros szöveget...\n</textarea>"
   },
   {
@@ -271,7 +186,7 @@
     "example": "<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <source src=\"movie.ogg\" type=\"video/ogg\">\n  A böngésződ nem támogatja a videólejátszást.\n</video>"
   },
   {
-    "question": "Az SVG fájlokban szereplő grafika milyen formátumú?",
+    "question": "Az SVG fájlokban szereplő grafika milyen struktúrájú?",
     "options": ["HTML", "CSS", "Bitmap", "XML"],
     "answer": 3,
     "explanation": "Az SVG (Scalable Vector Graphics) fájlok XML alapú formátumot használnak a vektorgrafika leírására. Ez lehetővé teszi a grafika méretezését anélkül, hogy a minőség romlana.",
