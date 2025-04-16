@@ -1,0 +1,389 @@
+[
+  {
+    "question": "Minek a rövidítése a HTML?",
+    "options": [
+      "Hyperlinks and Text Markup Language",
+      "Hyper Text Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "answer": 1,
+    "explanation": "A HTML a Hyper Text Markup Language rövidítése, amely a weboldalak szerkezetének leírására szolgál.",
+    "example": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Fent lévő címsor</title>\n    <style>\n      h1 {\n        color: #478a9e;\n      }\n    </style>\n  </head>\n  <body>\n    <h1> Hello Világ! </h1>\n    <p> Üdvözöllek a weboldalon! </p>\n  </body>\n</html>"
+  },
+  {
+    "question": "Ki alkotja a Web sztenderdeket, amelynek a HTML is része?",
+    "options": [
+      "Microsoft",
+      "Mozilla",
+      "World Wide Web Consortium (W3C)",
+      "Google"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Válaszd ki a legnagyobb címsorhoz tartozó helyes HTML elemet!",
+    "options": ["<heading>", "<h6>", "<h1>", "<head>"],
+    "answer": 2
+  },
+  {
+    "question": "Mi a helyes HTML elem egy sortörés beszúrásához?",
+    "options": ["<break>", "<linebreak>", "<hr>", "<br>"],
+    "answer": 3,
+    "explanation": "A <br> HTML elem sortörést hoz létre a szövegben (újsor karaktert). Hasznos lehet például vers vagy cím írásakor, ahol a sorok tagolása fontos szerepet játszik.",
+    "example": "<p>\n  Akinek nincs szeretője,<br>\n  Bort igyék,<br>\n  S hinni fogja, hogy minden lyány<br>\n  Érte ég.\n</p>\n<p>\n  És igyék bort az, akinek<br>\n  Pénze nincs,<br>\n  S az övé lesz a világon<br>\n  Minden kincs.\n</p>\n\n<!-- részlet Petőfi Sándor: Igyunk! c. verséből  -->"
+  },
+  {
+    "question": "Mi a helyes HTML elem egy új bekezdés létrehozásához?",
+    "options": ["<p>", "<paragraph>", "<pg>", "<text>"],
+    "answer": 0,
+    "explanation": "A <p> HTML elem egy új bekezdést hoz létre a szövegben. A böngészők automatikusan hozzáadnak egy kis margót a bekezdések között, így a szöveg tagoltabbá válik.",
+    "example": "<p>\n  Ez egy új bekezdés.\n</p>"
+  },
+  {
+    "question": "Mi a helyes HTML háttérszín hozzáadásához?",
+    "options": [
+      "<body bg=\"yellow\">",
+      "<background>yellow</background>",
+      "<body style=\"background-color:blue;\">"
+    ],
+    "answer": 2
+  },
+  {
+    "question": "Válaszd ki a fontos szöveg kijelölésére szolgáló helyes HTML elemet!",
+    "options": ["<i>", "<strong>", "<important>", "<b>"],
+    "answer": 1,
+    "explanation": "A <strong> HTML elem a fontos szöveg kiemelésére szolgál. A böngészők általában félkövér betűtípussal jelenítik meg, hogy hangsúlyozzák a jelentőségét.",
+    "example": "<p>\n  <strong>Ez egy fontos üzenet!</strong>\n</p>"
+  },
+  {
+    "question": "Mi a helyes HTML egy hivatkozás (hyperlink) létrehozásához?",
+    "options": [
+      "<a url=\"http://example.com\">Kattints ide</a>",
+      "<a href=\"http://example.com\">Kattints ide</a>",
+      "<link src=\"http://example.com\">Kattints ide</link>",
+      "<url href=\"http://example.com\">Kattints ide</url>"
+    ],
+    "answer": 1,
+    "explanation": "Az <a> tag egy hivatkozást (hyperlinket) határoz meg, amelyet arra használunk, hogy egyik oldalról a másikra navigáljunk.\nAz <a> elem legfontosabb attribútuma a href, amely a hivatkozás célját (címét) adja meg.",
+    "example": "<a href=\"http://ruander.hu/\">Ruander</a>"
+  },
+  {
+    "question": "Melyik karakterrel különböztetjük meg a záró taget?",
+    "options": ["!", "*", "<", "/"],
+    "answer": 3,
+    "explanation": "A záró HTML tagot a / karakterrel különböztetjük meg a nyitó tagetől.",
+    "example": "<p>\n  Ez egy bekezdés.\n</p>\n<p>\n  Ez egy másik bekezdés.\n</p>"
+  },
+  {
+    "question": "Hogy tudod megnyitni a linket új ablakban?",
+    "options": [
+      "<a href=\"url\" target=\"_blank\">",
+      "<a href=\"url\" new=\"window\">",
+      "<a href=\"url\" target=\"new\">"
+    ],
+    "answer": 0,
+    "explanation": "A target=\"_blank\" attribútum megnyitja a hivatkozást egy új böngészőablakban vagy fülön.",
+    "example": "<a href=\"http://example.com\" target=\"_blank\">Kattints ide</a>"
+  },
+  {
+    "question": "Az alábbiak közül melyek tartoznak a <table> elementhez?",
+    "options": [
+      "<thead><body><tr>",
+      "<table><head><tfoot>",
+      "<table><th><tt>",
+      "<table><tr><td>"
+    ],
+    "answer": 3,
+    "explanation": "A <table> elem a táblázatot definiálja, a <tr> elem a sorokat, a <td> elem a cellákat, és a <th> elem pedig a fejléc cellákat jelöli.",
+    "example": "<table>\n  <tr>\n    <th>Fejléc 1</th>\n    <th>Fejléc 2</th>\n  </tr>\n  <tr>\n    <td>Adat 1</td>\n    <td>Adat 2</td>\n  </tr>\n</table>"
+  },
+  {
+    "question": "Mivel tudsz HTML-ben számozott listát létrehozni?",
+    "options": ["<ol>", "<list>", "<ul>", "<dl>"],
+    "answer": 0,
+    "explanation": "Az <ol> elem számozott listát hoz létre, míg az <ul> elem felsorolásos listát. A <dl> elem definíciós listát, a <list> pedig nem létező HTML elem.",
+    "example": "<ol>\n  <li>Első elem</li>\n  <li>Második elem</li>\n</ol>"
+  },
+  {
+    "question": "Mi a helyes módja egy jelölőnégyzet (checkbox) elem létrehozásának?",
+    "options": [
+      "<checkbox>",
+      "<input type=\"check\">",
+      "<check>",
+      "<input type=\"checkbox\">"
+    ],
+    "answer": 3,
+    "explanation": "A <input type=\"checkbox\"> elem létrehozza a jelölőnégyzetet, amely lehetővé teszi a felhasználó számára, hogy több lehetőség közül válasszon.",
+    "example": "<input type=\"checkbox\" name=\"option1\" value=\"yes\">Igen</input>\n<input type=\"checkbox\" name=\"option2\" value=\"no\">Nem</input>"
+  },
+  {
+    "question": "Mi a helyes módja egy legördülő (drop-down) lista létrehozásának?",
+    "options": [
+      "<input type=\"dropdown\">",
+      "<select>",
+      "<input type=\"list\">",
+      "<list>"
+    ],
+    "answer": 1,
+    "explanation": "A <select> elem létrehozza a legördülő listát, amely lehetővé teszi a felhasználó számára, hogy egy lehetőséget válasszon a megadott lehetőségek közül.",
+    "example": "<label for=\"cars\">Válassz autót:</label>\n\n<select name=\"cars\" id=\"cars\">\n  <option value=\"volvo\">Volvo</option>\n  <option value=\"saab\">Saab</option>\n  <option value=\"mercedes\">Mercedes</option>\n  <option value=\"audi\">Audi</option>\n</select>"
+  },
+  {
+    "question": "Mi a helyes módja a szövegmező (textarea) létrehozásának?",
+    "options": [
+      "<input type=\"text\">",
+      "<textarea>",
+      "<text>",
+      "<input type=\"textarea\">"
+    ],
+    "answer": 1,
+    "explanation": "A <textarea> elem létrehozza a szövegmezőt, amely lehetővé teszi a felhasználó számára, hogy több soros szöveget írjon be.",
+    "example": "<textarea rows=\"4\" cols=\"50\">\n  Írj ide többsoros szöveget...\n</textarea>"
+  },
+  {
+    "question": "Mi a kép beillesztésének a helyes módja?",
+    "options": [
+      "<image src=\"cat.png\">Cica</img>",
+      "<picture src=\"cat.png\">Cica</picture>",
+      "<img src=\"cat.png\" alt=\"Cica\">",
+      "<img href=\"cat.png\" alt=\"Cica\">"
+    ],
+    "answer": 2,
+    "explanation": "A <img> elem a képek beillesztésére szolgál. Az src attribútum határozza meg a kép forrását, míg az alt attribútum a kép alternatív szövegét adja meg, amely akkor jelenik meg, ha a kép nem tölthető be.",
+    "example": "<img src=\"cat.png\" alt=\"Cica\">"
+  },
+  {
+    "question": "A HTML kommenteket <!-- és --> közé írjuk.",
+    "options": ["Igen", "Nem"],
+    "answer": 0,
+    "explanation": "A HTML kommentek a <!-- és --> közé írt szövegek, amelyeket a böngészők figyelmen kívül hagynak. Ezeket a fejlesztők használják megjegyzések hozzáadására a kódhoz, hogy magyarázzák a kód működését vagy megjegyzéseket fűzzenek hozzá.",
+    "example": "<!-- Ez egy komment -->\n<p>Ez egy bekezdés.</p>"
+  },
+  {
+    "question": "Hogy tudod megnyitni a linket új ablakban?",
+    "options": [
+      "<a href=\"url\" target=\"_blank\">",
+      "<a href=\"url\" new=\"window\">",
+      "<a href=\"url\" target=\"new\">"
+    ],
+    "answer": 0,
+    "explanation": "A target=\"_blank\" attribútum megnyitja a hivatkozást egy új böngészőablakban vagy fülön.",
+    "example": "<a href=\"http://example.com\" target=\"_blank\">Kattints ide</a>"
+  },
+  {
+    "question": "Az alábbiak közül melyek tartoznak a <table> elementhez?",
+    "options": [
+      "<thead><body><tr>",
+      "<table><head><tfoot>",
+      "<table><th><tt>",
+      "<table><tr><td>"
+    ],
+    "answer": 3,
+    "explanation": "A <table> elem a táblázatot definiálja, a <tr> elem a sorokat, a <td> elem a cellákat, és a <th> elem pedig a fejléc cellákat jelöli.",
+    "example": "<table>\n  <tr>\n    <th>Fejléc 1</th>\n    <th>Fejléc 2</th>\n  </tr>\n  <tr>\n    <td>Adat 1</td>\n    <td>Adat 2</td>\n  </tr>\n</table>"
+  },
+  {
+    "question": "Mivel tudsz HTML-ben számozott listát létrehozni?",
+    "options": ["<ol>", "<list>", "<ul>", "<dl>"],
+    "answer": 0,
+    "explanation": "Az <ol> elem számozott listát hoz létre, míg az <ul> elem felsorolásos listát. A <dl> elem definíciós listát, a <list> pedig nem létező HTML elem.",
+    "example": "<ol>\n  <li>Első elem</li>\n  <li>Második elem</li>\n</ol>"
+  },
+  {
+    "question": "Mi a helyes módja egy jelölőnégyzet (checkbox) elem létrehozásának?",
+    "options": [
+      "<checkbox>",
+      "<input type=\"check\">",
+      "<check>",
+      "<input type=\"checkbox\">"
+    ],
+    "answer": 3,
+    "explanation": "A <input type=\"checkbox\"> elem létrehozza a jelölőnégyzetet, amely lehetővé teszi a felhasználó számára, hogy több lehetőség közül válasszon.",
+    "example": "<input type=\"checkbox\" name=\"option1\" value=\"yes\">Igen</input>\n<input type=\"checkbox\" name=\"option2\" value=\"no\">Nem</input>"
+  },
+  {
+    "question": "Mi a helyes módja egy legördülő (drop-down) lista létrehozásának?",
+    "options": [
+      "<input type=\"dropdown\">",
+      "<select>",
+      "<input type=\"list\">",
+      "<list>"
+    ],
+    "answer": 1,
+    "explanation": "A <select> elem létrehozza a legördülő listát, amely lehetővé teszi a felhasználó számára, hogy egy lehetőséget válasszon a megadott lehetőségek közül.",
+    "example": "<label for=\"cars\">Válassz autót:</label>\n\n<select name=\"cars\" id=\"cars\">\n  <option value=\"volvo\">Volvo</option>\n  <option value=\"saab\">Saab</option>\n  <option value=\"mercedes\">Mercedes</option>\n  <option value=\"audi\">Audi</option>\n</select>"
+  },
+  {
+    "question": "Mi a helyes módja a szövegmező (textarea) létrehozásának?",
+    "options": [
+      "<input type=\"text\">",
+      "<textarea>",
+      "<text>",
+      "<input type=\"textarea\">"
+    ],
+    "answer": 1,
+    "explanation": "A <textarea> elem létrehozza a szövegmezőt, amely lehetővé teszi a felhasználó számára, hogy több soros szöveget írjon be.",
+    "example": "<textarea rows=\"4\" cols=\"50\">\n  Írj ide többsoros szöveget...\n</textarea>"
+  },
+  {
+    "question": "Mi a kép beillesztésének a helyes módja?",
+    "options": [
+      "<image src=\"cat.png\">Cica</img>",
+      "<picture src=\"cat.png\">Cica</picture>",
+      "<img src=\"cat.png\" alt=\"Cica\">",
+      "<img href=\"cat.png\" alt=\"Cica\">"
+    ],
+    "answer": 2,
+    "explanation": "A <img> elem a képek beillesztésére szolgál. Az src attribútum határozza meg a kép forrását, míg az alt attribútum a kép alternatív szövegét adja meg, amely akkor jelenik meg, ha a kép nem tölthető be.",
+    "example": "<img src=\"cat.png\" alt=\"Cica\">"
+  },
+  {
+    "question": "A HTML kommenteket <!-- és --> közé írjuk.",
+    "options": ["Igen", "Nem"],
+    "answer": 0,
+    "explanation": "A HTML kommentek a <!-- és --> közé írt szövegek, amelyeket a böngészők figyelmen kívül hagynak. Ezeket a fejlesztők használják megjegyzések hozzáadására a kódhoz, hogy magyarázzák a kód működését vagy megjegyzéseket fűzzenek hozzá.",
+    "example": "<!-- Ez egy komment -->\n<p>Ez egy bekezdés.</p>"
+  },
+  {
+    "question": "Melyik elemmel definiáljuk a dokumentum címét?",
+    "options": ["<head>", "<title>", "<meta>", "<h1>"],
+    "answer": 1,
+    "explanation": "A <head> részben használatos <title> elem a dokumentum címét definiálja, amely megjelenik a böngésző címsorában és a könyvjelzők között. A <head> elem tartalmazza a dokumentum metaadatait, míg a <meta> elem további információkat adhat meg a dokumentumról.",
+    "example": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Fent lévő címsor</title>\n    <style>\n      h1 {\n        color: #478a9e;\n      }\n    </style>\n  </head>\n  <body>\n    <h1> Hello Világ! </h1>\n    <p> Üdvözöllek a weboldalon! </p>\n  </body>\n</html>"
+  },
+  {
+    "question": "HTML-ben egy SVG képet egy az egyben beilleszthetünk a HTML kódba az elemek közé.",
+    "options": ["Igen", "Nem"],
+    "answer": 0,
+    "explanation": "Igen, az SVG képeket közvetlenül beilleszthetjük a HTML kódba, és így a böngésző közvetlenül megjeleníti őket. Az SVG formátum vektorgrafikát használ, amely lehetővé teszi a méretezést anélkül, hogy a kép minősége romlana."
+  },
+  {
+    "question": "Milyen attribútum szolgál a dokumentum nyelvének beállítására?",
+    "options": ["lang", "language", "xml:lang", "charset"],
+    "answer": 0,
+    "explanation": "A lang attribútumot használjuk a dokumentum nyelvének beállítására. Például: <html lang=\"hu\">. Az xml:lang attribútum XML dokumentumokban használatos, míg a charset az karakterkódolásra vonatkozik."
+  },
+  {
+    "question": "Milyen elemmel illetszhetünk be videófájlt a HTML dokumetumba?",
+    "options": ["<video>", "<media>", "<movie>", "<vid>"],
+    "answer": 0,
+    "explanation": "A <video> elem használható videófájlok beillesztésére a HTML dokumentumba. Az <audio> elem pedig hangfájlok beillesztésére szolgál.",
+    "example": "<video width=\"320\" height=\"240\" controls>\n  <source src=\"movie.mp4\" type=\"video/mp4\">\n  <source src=\"movie.ogg\" type=\"video/ogg\">\n  A böngésződ nem támogatja a videólejátszást.\n</video>"
+  },
+  {
+    "question": "Az SVG fájlokban szereplő grafika milyen formátumú?",
+    "options": ["HTML", "CSS", "Bitmap", "XML"],
+    "answer": 3,
+    "explanation": "Az SVG (Scalable Vector Graphics) fájlok XML alapú formátumot használnak a vektorgrafika leírására. Ez lehetővé teszi a grafika méretezését anélkül, hogy a minőség romlana.",
+    "example": "<svg width=\"100\" height=\"100\">\n  <circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"black\" stroke-width=\"3\" fill=\"red\" />\n</svg>"
+  },
+  {
+    "question": "Melyik elem használható a HTML inputoknál kötelező mezők megjelölésére?",
+    "options": ["mandatory", "required", "validate", "placeholder"],
+    "answer": 1,
+    "explanation": "A required attribútum jelzi, hogy egy mező kitöltése kötelező. Ha a felhasználó megpróbálja elküldeni a űrlapot anélkül, hogy kitöltötte volna ezt a mezőt, akkor a böngésző figyelmeztetést ad.",
+    "example": "<input type=\"text\" name=\"name\" required placeholder=\"Név\">"
+  },
+  {
+    "question": "Melyik elem használható a HTML input mezők címkézésére?",
+    "options": ["<label>", "<caption>", "<title>", "<legend>"],
+    "answer": 0,
+    "explanation": "A <label> elem használható a HTML input mezők címkézésére. Ez segít a felhasználóknak megérteni, hogy mit várnak el tőlük az adott mezőben.",
+    "example": "<label for=\"name\">Név:</label>\n<input type=\"text\" id=\"name\" name=\"name\">"
+  },
+  {
+    "question": "Minek a rövidítése a CSS?",
+    "options": [
+      "Creative Style Sheets",
+      "Colorful Style Sheets",
+      "Cascading Style Sheets",
+      "Computer Style Sheets"
+    ],
+    "answer": 2,
+    "explanation": "A CSS a Cascading Style Sheets rövidítése, amely a weboldalak megjelenésének és formázásának leírására szolgál. A CSS lehetővé teszi a stílusok alkalmazását HTML elemekre, például színek, betűtípusok és elrendezések beállítására.",
+    "example": "<style>\n  body {\n    background-color: lightblue;\n  }\n  h1 {\n    color: white;\n    text-align: center;\n  }\n</style>"
+  },
+  {
+    "question": "Mi a helyes módja külső CSS fájl csatolásának egy HTML dokumentumhoz?",
+    "options": [
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">",
+      "<style src=\"style.css\"></style>",
+      "<css src=\"style.css\"></css>",
+      "<stylesheet>style.css</stylesheet>"
+    ],
+    "answer": 0,
+    "explanation": "A külső CSS fájl csatolásának helyes módja a <link> elem használata, amelynek rel attribútuma \"stylesheet\", type attribútuma \"text/css\", és href attribútuma a CSS fájl elérési útja.",
+    "example": "<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\">"
+  },
+  {
+    "question": "Melyik HTML attribútummal tudunk egy elemnek helyi (inline) stílust definiálni?",
+    "options": ["class", "font", "href", "style"],
+    "answer": 3,
+    "explanation": "A style attribútum használható egy elem helyi (inline) stílusának definiálására. Ez lehetővé teszi, hogy közvetlenül az adott HTML elemhez rendeljünk CSS stílusokat.",
+    "example": "<p style=\"color: red;\">Ez egy piros szöveg.</p>"
+  },
+  {
+    "question": "Mi a helyes CSS szintaxis betűméret beállításához?",
+    "options": ["text-size", "font-size", "font-style", "text-style"],
+    "answer": 1,
+    "explanation": "A font-size tulajdonságot használjuk a betűméret beállítására CSS-ben. Például: font-size: 16px; vagy font-size: 1.5em;.",
+    "example": "h1 {\n  font-size: 24px;\n}"
+  },
+  {
+    "question": "Hogyan kommentelhetünk a CSS fájlban?",
+    "options": [
+      "// Ez egy komment",
+      "<!-- Ez egy komment -->",
+      "/* Ez egy komment */",
+      "# Ez egy komment"
+    ],
+    "answer": 2,
+    "explanation": "A CSS fájlban a kommentek a /* és */ karakterek között helyezkednek el. Ez lehetővé teszi, hogy megjegyzéseket fűzzünk a kódhoz anélkül, hogy az befolyásolná a stílusokat.",
+    "example": "/* Ez egy komment */\nbody {\n  background-color: lightblue;\n}"
+  },
+  {
+    "question": "Mi a CSS Box Model?",
+    "options": [
+      "A HTML elemek elrendezésének módja",
+      "A CSS fájlok méretének meghatározása",
+      "A CSS stílusok alkalmazásának sorrendje",
+      "A CSS animációk sebessége"
+    ],
+    "answer": 0,
+    "explanation": "A CSS Box Model a HTML elemek elrendezésének módját határozza meg, beleértve a margókat, kereteket, kitöltéseket és tartalmat.",
+    "example": "div {\n  margin: 10px;\n  padding: 20px;\n  border: 1px solid black;\n}"
+  },
+  {
+    "question": "Mi a különbség a padding és a margin között?",
+    "options": [
+      "A padding az elem körüli térköz, míg a margin a tartalom és a keret közötti távolság.",
+      "Nincs különbség, mindkettő ugyanazt jelenti.",
+      "A padding a tartalom és a keret közötti távolság, míg a margin az elem körüli térköz.",
+      "A padding csak szövegeknél használható, míg a margin minden elemnél."
+    ],
+    "answer": 2,
+    "explanation": "A padding a tartalom és a keret közötti távolságot jelenti, míg a margin az elem körüli térközt határozza meg.",
+    "example": "div {\n  padding: 10px;\n  margin: 20px;\n}"
+  },
+  {
+    "question": "CSS segítségével hogyan vehetjük le az aláhúzást egy linkről?",
+    "options": [
+      "a{text-underline: none;}",
+      "a{text-decoration: none;}",
+      "a{link-decoration: none;}",
+      "a{underline: none;}"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "Hogyan állítod be a szegély vastagságot, ha felső 10 pixel, alsó 5 pixel, bal 20 pixel és jobb 1 pixelt szeretnél?",
+    "options": [
+      "border: 10px 20px 5px 1px;",
+      "border: 10px 5px 20px 1px;",
+      "border: 10px 20px 1px 5px;",
+      "border: 10px 1px 5px 20px;"
+    ],
+    "answer": 3,
+    "explanation": "A CSS szegélyek sorrendje: top, right, bottom, left. Tehát a helyes válasz: border: 10px 1px 5px 20px;"
+  }
+]

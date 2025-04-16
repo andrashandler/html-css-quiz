@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML QUIZ</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <div id="app" x-data="quizApp()" class="container">
+      <section x-show="!showQuiz" class="start-screen">
+        <h1 class="hero">HTML Kvíz</h1>
+
+        <p class="welcome" x-show="!name">
+          Üdvözlünk a HTML kvízben! Teszteld a tudásodat!
+        </p>
+
+        <p class="welcome" x-show="name" x-text="'Üdv ' + name + '!'"></p>
+
+        <div>
+          <input
+            type="text"
+            class="text-input"
+            x-model="name"
+            placeholder="Írd be a neved"
+          />
+          <div class="text-center">
+            <button class="btn" @click="startQuiz" :disabled="!name">
+              Kezdjük!
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <template x-if="showQuiz">
+        <!-- GAME SCREEN -->
+        <section id="game">
+            <header class="sticky-header">
+            
+              <h1 class="title">HTML Kvíz</h1>
+              <div class="score">
+                <span class="score-text">Pontszám:</span>
+                <span class="score-value" x-text="score"></span>
+              </div>
+              <div id="progressLine" :style="'width:' + progress + '%'"></div>
+            </header>
+            <main>
+              <div class="questionCard">
+                <h3 class="question" x-text="currentQuestionObject.question"></h3>
+              </div>
+
+              <div class="answers" x-show="!showAnswer">
+                <template x-for="(answer, index) in currentQuestionObject.options" :key="index">
+                  <button
+                    class="btn answer"
+                    @click="checkAnswer(index)"
+                    x-text="answer"
+                  ></button>
+                </template>
+              </div>
+
+              <div class="answerPanel" x-show="showAnswer">
+                
+                <div class="wrongAnswer" x-show="!isCorrect" >                    
+                  <span x-text="currentQuestionObject.options[selectedAnswer]"></span>
+                </div>
+
+                <h3 x-show="!isCorrect" class="correctAnswerHeader">A helyes válasz:</h3>
+                <div class="correctAnswer">
+                  <span x-text="currentQuestionObject.options[currentQuestionObject.answer]"></span>
+                </div>
+
+                <!-- Cheer megjelenítése -->
+                <template x-if="cheer">
+                  <div class="cheer">
+                    <span x-text="cheer.emoji" class="emoji"></span>
+                    <span x-text="cheer.text" class="cheerText"></span>
+                  </div>
+                </template>
+
+                <!-- Magyarázat megjelenítése -->
+                <template x-if="currentQuestionObject.explanation">
+                  <div class="explanation">
+                    <h4 class="explanationHeader">Magyarázat:</h4>
+                    <p x-text="currentQuestionObject.explanation"></p>
+                  </div>
+                </template>
+
+                <!-- Példa megjelenítése -->
+                <template x-if="currentQuestionObject.example"> 
+                  <div class="example">
+                    <h4 class="exampleHeader">Példa:</h4>
+                    <pre class="exampleCode">
+                      <code x-text="currentQuestionObject.example"></code>
+                    </pre>
+                  </div>
+                </template>
+
+                <div class="text-right" >
+                  <button class="btn next" x-on:click="nextQuestion()">Következő</button>
+                </div>
+              </div>
+            </main>
+        </section>
+      </template>
+
+      <template x-if="showResult">
+      <!-- RESULTS SCREEN -->
+      <section id="results">Eredmények</section>
+    </div>
+  </body>
+</html>
+
